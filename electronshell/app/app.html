@@ -60,7 +60,7 @@
           var showmsg = document.getElementById('showmsg');
           showmsg.innerText = err
         });
-        ipcRenderer.send("destorySerialPort","testpath", "testopts");
+        ipcRenderer.send("destorySerialPort",null);
       }
       function DestoryAllSerialPort(){
         var ipcRenderer = require("electron").ipcRenderer;
@@ -70,7 +70,7 @@
           var showmsg = document.getElementById('showmsg');
           showmsg.innerText = err
         });
-        ipcRenderer.send("destoryAllSerialPort","testpath", "testopts");
+        ipcRenderer.send("destoryAllSerialPort");
       }
     </script>
     <button onclick="InitSerialPort()">InitSerialPort</button>
