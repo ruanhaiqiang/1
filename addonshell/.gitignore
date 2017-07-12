@@ -1,0 +1,4 @@
+
+.DS_Store
+node-serialport-electron/node_modules
+node-serialport-electron/build
